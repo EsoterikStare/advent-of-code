@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "d1-p1": "ts-node ./day-1/part-1",
+    "d1-p2": "ts-node ./day-1/part-2",
+    "d2-p1": "ts-node ./day-2/part-1",
+    "d2-p2": "ts-node ./day-2/part-2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.11",
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
+    "eslint": "^8.29.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
