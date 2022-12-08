@@ -1,16 +1,27 @@
-export const throwScoreMap: { [key: string]: number } = {
+interface ThrowScoreMap {
+  [key: string]: number
+}
+export const throwScoreMap: ThrowScoreMap = {
   X: 1,
   Y: 2,
   Z: 3,
 };
 
-export const outcomeScoreMap: { [key: string]: number } = {
+interface OutcomeScoreMap {
+  [key: string]: number
+}
+export const outcomeScoreMap: OutcomeScoreMap = {
   win: 6,
   draw: 3,
   lose: 0
 }
 
-export const outcomeMap: { [key: string]: { [key: string]: string } } = {
+interface OutcomeMap {
+  [key: string]: {
+    [key: string]: string
+  }
+}
+export const outcomeMap: OutcomeMap = {
   A: {
     X: 'draw',
     Y: 'win',
@@ -28,7 +39,12 @@ export const outcomeMap: { [key: string]: { [key: string]: string } } = {
   },
 }
 
-export const desiredOutcomeMap: { [key: string]: { [key: string]: string } } = {
+interface DesiredOutcomeMap {
+  [key: string]: {
+    [key: string]: string
+  }
+}
+export const desiredOutcomeMap: DesiredOutcomeMap = {
   // https://adventofcode.com/2022/day/2#part2
   // X is the losing throw, Y is a draw, Z is the winning throw. Very confusing mapping.
   A: {
