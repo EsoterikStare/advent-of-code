@@ -1,6 +1,6 @@
 import { data, generateIntRange } from './data';
 
-const overlapCount = data.reduce<number>((acc, rangePairs, index) => {
+const overlapCount = data.reduce<number>((acc, rangePairs) => {
   const [firstRangePair, secondRangePair] = rangePairs;
 
   const [firstRangeStart, firstRangeEnd] = firstRangePair;
@@ -11,8 +11,6 @@ const overlapCount = data.reduce<number>((acc, rangePairs, index) => {
 
   const anyOverlap = firstRange.some(firstVal => secondRange.includes(firstVal))
   
-  // console.log({ firstRange, secondRange, anyOverlap, index })
-
   if (anyOverlap) {
     acc += 1;
   }
