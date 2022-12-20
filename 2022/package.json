@@ -5,7 +5,9 @@
     "d2-p1": "ts-node ./day-2/part-1",
     "d2-p2": "ts-node ./day-2/part-2",
     "d3-p1": "ts-node ./day-3/part-1",
-    "d3-p2": "ts-node ./day-3/part-2"
+    "d3-p2": "ts-node ./day-3/part-2",
+    "d4-p1": "ts-node ./day-4/part-1",
+    "d4-p2": "ts-node ./day-4/part-2"
   },
   "devDependencies": {
     "@types/node": "^18.11.11",
